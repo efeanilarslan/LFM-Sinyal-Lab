@@ -1,10 +1,10 @@
-# 🛰️ LFM (Chirp) Radar Sinyali Simülasyonu & Uyumlu Filtre (Matched Filter) ile Hedef Tespiti
+# LFM (Chirp) Radar Sinyali Simülasyonu & Uyumlu Filtre (Matched Filter) ile Hedef Tespiti
 
 Bu proje; modern radar ve sonar sistemlerinde yaygın olarak kullanılan **Doğrusal Frekans Modülasyonlu (LFM - Linear Frequency Modulation / Chirp)** sinyallerin matematiksel modellemesini ve hedeften dönen zayıflatılmış/gecikmiş yankı (Echo) sinyalinin **Uyumlu Filtre (Matched Filter - Çapraz Korelasyon)** tekniği ile tespit edilerek hedef mesafesinin hesaplanmasını konu almaktadır.
 
 ---
 
-## 🎯 Projenin Amacı ve Temel Konseptler
+## Projenin Amacı ve Temel Konseptler
 
 - **Darbe Sıkıştırma (Pulse Compression):** Geleneksel darbe radarlarında menzil çözünürlüğü darbe genişliğine bağlıyken, LFM sinyallerinde çözünürlük sinyalin **bant genişliğine ($B$)** bağlıdır. Bu sayede uzun darbeler kullanılarak yüksek enerji iletimi sağlanırken aynı zamanda yüksek menzil çözünürlüğü elde edilir.
 - **LFM / Chirp Dalgası Üretimi:** Belirli bir darbe süresi ($T$) boyunca frekansı $f_0$'dan $f_1$'e doğrusal olarak artan sinüzoidal dalga formunun modellenmesi.
@@ -13,7 +13,7 @@ Bu proje; modern radar ve sonar sistemlerinde yaygın olarak kullanılan **Doğr
 
 ---
 
-## 📐 Matematiksel Altyapı
+## Matematiksel Altyapı
 
 ### 1. LFM (Chirp) Sinyal Denklemi
 Sinyalin anlık frekansı zamanla doğrusal olarak artar:
@@ -38,7 +38,7 @@ $$R = \frac{c \cdot \tau_{tepe}}{2}$$
 
 ---
 
-## 📁 Proje Dosyaları
+## Proje Dosyaları
 
 - [`LFM sinyal kod.py`](file:///Users/oneo/Desktop/Projeler/Kod/LFM%20sinyal/LFM%20sinyal%20kod.py):
   - $f_0 = 100\text{ Hz}$, $f_1 = 3000\text{ Hz}$ frekans aralığında LFM sinyalini üretir.
@@ -50,7 +50,7 @@ $$R = \frac{c \cdot \tau_{tepe}}{2}$$
 
 ---
 
-## 📊 Çıktılar ve Görselleştirme
+## Çıktılar ve Görselleştirme
 
 ### 1. Frekans Değişim Analizi
 - Dalganın başlangıcında periyot uzun (düşük frekans), zaman ilerledikçe dalgalar sıklaşmakta ve periyot kısalmaktadır (yüksek frekans).
@@ -63,7 +63,7 @@ olarak hedefin konumu kusursuz şekilde doğrulanır.
 
 ---
 
-## 🚀 Kurulum ve Çalıştırma
+## Kurulum ve Çalıştırma
 
 ### Gereksinimler
 - Python 3.8+
@@ -88,7 +88,7 @@ python "LFM sinyali ve ECHO (Kolerasyon).py"
 
 ---
 
-## 👤 Hazırlayan
+## Hazırlayan
 
 - **Efe Anıl Arslan**
 - Radar & Haberleşme Sistemleri Sinyal İşleme Çalışması
